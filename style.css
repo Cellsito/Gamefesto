@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url(fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+}
+
+:root {
+
+    --laranja-gamefesto: #FFA647;
+    --azul_claro-gamefesto: #20aaff;
+    --azul_escuro-gamefesto: #1D2F6F;
+    --escuro-gamefesto: #31323f;
+
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 85vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+
+    background-image: linear-gradient(360deg, rgba(1,44,135,0) 0%, rgba(29,47,111,1) 90%) ,url(img/gamefesto_bground.png);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+}
+
+header {
+    height: 165px;
+}
+
+header div.container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
+.menu {
+    width: 820px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color:white;
+    
+    font-family: 'Orbitron';
+    font-size: 16px;
+    font-weight: bold;
+    
+    text-decoration: underline transparent;
+
+    background-color: var(--laranja-gamefesto);
+    height: 43px;
+    width: 190px;
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+
+    transition: 500ms ease;
+}
+
+.menu a:hover {
+    background-color: #B37432;
+}
+
