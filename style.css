@@ -252,14 +252,24 @@ p {
     padding-bottom: 50px;
 }
 
+#portfolio {
+    display: flex;
+    justify-content: center;
+}
+
 .cover-bg {
-    background-color: #633300;
+    padding: 20px;
+
+    background-color: rgb(99, 51, 0, 0.7);
+
+    width: 90%;
+
+    margin-bottom: 60px;
+
+    border-radius: 20px;
 }
 
 #portfolio .cover {
-    margin-top: 40px;
-    margin-bottom: 40px;
-
     height: 100vh;
 
     background-image: url(img/game-cover.png);
@@ -295,8 +305,206 @@ p {
     width: 150px;
 }
 
+#contato {
+    display: flex;
+    justify-content: center;
+}
+
 #contato form .container-grid{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+
+form {
+    background-color: white;
+
+    padding: 70px;
+    padding-top: 40px;
+    padding-bottom: 0;
+
+    margin: 50px;
+    margin-bottom: 150px;
+
+    width: 80%;
+
+    border-radius: 40px;
+}
+
+form .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info .pessoal {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#contato form label {
+    font-family: "Poppins";
+
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.pessoal .campo {
+    width: 80%;
+
+    margin-bottom: 50px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pessoal .campo input {
+    height: 40px;
+
+    color: cadetblue;
+    background-color: #dddddd;
+
+    border: none;
+    border-radius: 10px;
+    border-color: var(--escuro-gamefesto);
+
+    outline: none;
+
+    text-indent: 10px;
+
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+.pessoal .campo-textarea {
+    width: 80%;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pessoal .campo-textarea textarea {
+    color: cadetblue;
+    background-color: #dddddd;
+
+    border: none;
+    border-radius: 10px;
+    border-color: var(--escuro-gamefesto);
+    border-width: 5px;
+
+    padding: 10px;
+
+    font-family: 'Poppins';
+    font-size: 17px;
+
+    resize: none;
+}
+
+.campo input:focus, .campo-textarea textarea:focus {
+    outline: 3px solid var(--laranja-gamefesto);
+}
+
+.info .pessoal button {
+    margin: 10px;
+
+    font-family: 'Orbitron';
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+
+    background-color: var(--azul_claro-gamefesto);
+
+    width: 60%;
+    height: 60px;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: 500ms ease
+}
+
+.pessoal button:hover {
+    background-color: #005f9a;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .social h2 {
+    padding-bottom: 30px;
+}
+
+.social .campo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social .campo p{
+    font-size: 20px;
+}
+
+.social .campo img {
+    margin: 20px;
+
+    width: 60px;
+}
+
+.social img {
+    width: 500px;
+}
+
+.fundo-laranja {
+    padding-top: 40px;
+
+    background-image: linear-gradient(180deg, rgba(1,44,135,0) 0%, rgb(111, 72, 31 ,0.70) 90%), url(img/pattern-lar.png);
+    background-size: 155px;
+}
+
+footer {
+    height: 100vh;
+
+    background-color: var(--escuro-gamefesto);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+footer .container-grid {
+    padding-top: 40px;
+}
+
+footer .container-grid .direitos p {
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+.redes-sociais a {
+    margin: 10px;
+
+    color: white;
+}
+
+.redes-sociais a:hover {
+    color: var(--azul_claro-gamefesto);
 }
