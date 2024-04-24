@@ -493,6 +493,10 @@ footer .container-grid {
     padding-top: 40px;
 }
 
+footer .direitos img {
+    width: 300px;
+}
+
 footer .container-grid .direitos p {
     color: white;
 
@@ -507,4 +511,27 @@ footer .container-grid .direitos p {
 
 .redes-sociais a:hover {
     color: var(--azul_claro-gamefesto);
+}
+
+@media screen and (max-width: 1300px) {
+    .container-grid {
+        width: 90vw;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu a {
+        width: 170px;
+
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    
 }
