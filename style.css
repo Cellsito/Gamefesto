@@ -61,6 +61,10 @@ header img {
     width: 250px;
 }
 
+header button {
+    display: none;
+}
+
 .menu {
     width: 820px;
 
@@ -513,25 +517,122 @@ footer .container-grid .direitos p {
     color: var(--azul_claro-gamefesto);
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1320px) {
     .container-grid {
         width: 90vw;
     }
 
-    .menu {
-        display: flex;
-        justify-content: space-around;
+    header {
+        position: relative;
     }
 
-    .menu a {
-        width: 170px;
+    header button {
+        width: 50px;
 
-        margin: 0;
-        padding-left: 0;
-        padding-right: 0;
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        width: 100%;
+
+        height: 100%;
+
+        color: white;
+
+        transition: 500ms ease;
+    }
+
+    header svg:hover {
+        color: var(--azul_claro-gamefesto);
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        border-radius: 20px;
+
+        background: linear-gradient(360deg, rgba(49,50,63,1) 29%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+
+    nav.menu a {
+        background-color: var(--azul_claro-gamefesto);
+
+        width: 85%;
+    }
+
+    nav.menu :last-child {
+        background-color: var(--laranja-gamefesto);
+    }
+
+    .sobre-nos img {
+        width: 400px;
+    }
+
+    .gamificacao {
+        padding-bottom: 0;
+    }
+
+    .gamificacao img {
+        width: 450px;
+    }
+
+    .onde-aplicar {
+        padding-bottom: 0;
+    }
+
+    .onde-aplicar img {
+        width: 350px;
+        padding: 0;
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1100px) {
+    #sobre .container-grid {
+        width: 90vw;
+    }
+
+    #trabalhos .container-grid {
+        width: 80vw;
+    }
+
+    .social {
+        justify-content: space-between;
+    }
+
+    .social img {
+        width: 400px;
+    }
     
+    .social .campo p {
+        font-size: 17px;
+    }
+
+    #sobre {
+        background-size: 100px;
+    }
+
+    #trabalhos {
+        background-size: 80px;
+    }
+
+    .fundo-laranja {
+        background-size: 100px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #portfolio .cover {
+        background-size: 100%;
+    }
 }
