@@ -522,6 +522,11 @@ footer .container-grid .direitos p {
         width: 90vw;
     }
 
+    .banner {
+        background-size: cover;
+        background-position-x:right
+    }
+
     header {
         position: relative;
     }
@@ -634,5 +639,149 @@ footer .container-grid .direitos p {
 @media screen and (max-width: 990px) {
     #portfolio .cover {
         background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .sobre-nos {
+        padding: 20px;
+        height: 460px;
+    }
+
+    .sobre-nos img {
+        width: 350px;
+    }
+
+    .gamificacao {
+        padding: 20px 20px 0;
+        height: 360px; 
+    }
+
+    .gamificacao img {
+        width: 425px;
+    }
+
+    form .info {
+        display: flex;
+        flex-direction: column;
+        align-items:center
+    }
+
+    .social .campo img {
+        margin: 10px;
+        width: 45px
+    }
+
+    .social img {
+        width: 300px
+    }
+
+    footer {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    nav.menu {
+        width: 100vw;
+        display:none;
+    }
+
+    .sobre-nos {
+        padding: 30px;
+        background-image: url(img/Hefesto\ 1-15%.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sobre-nos img {
+        display: none;
+    }
+
+    .gamificacao {
+        padding: 30px;
+        background-image: url(img/Thiago\ 1-15%.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gamificacao img {
+        display: none;
+    }
+
+    .onde-aplicar {
+        padding: 30px;
+        background-image: url(img/Tadeu\ 1-15%.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .onde-aplicar img {
+        display: none;
+    }
+
+    #trabalhos .container-grid {
+        width: 100vw;
+    }
+
+    #trabalhos h2 {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #trabalhos img {
+        width: 100vw;
+    }
+
+    .cover-bg {
+        height: 100vh;
+        width: 100vw;
+
+        background-color: rgb(99, 51, 0, 0.7);
+
+        border-radius: 0px;
+
+        padding: 0px;
+    }
+    
+    #portfolio .cover {
+        background-image: url(img/cover-mobile.png);
+        background-size: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    form .container-grid p {
+        text-align: center
+    }
+
+    .pessoal {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .pessoal .campo, .pessoal .campo-textarea {
+        width: 100%
+    }
+
+    footer {
+       background-image: url(img/hefesto-jogando.png);
+       
+       background-position-x: right;
+       background-position-y: bottom;
+
+       background-repeat: no-repeat;
+
+       background-size: 300px;
+    }
+
+    footer img.hefesto-jogando {
+        display: none
     }
 }
