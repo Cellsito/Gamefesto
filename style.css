@@ -374,7 +374,7 @@ form .info {
 .pessoal .campo input {
     height: 40px;
 
-    color: cadetblue;
+    color: var(--azul_escuro-gamefesto);
     background-color: #dddddd;
 
     border: none;
@@ -402,7 +402,7 @@ form .info {
 }
 
 .pessoal .campo-textarea textarea {
-    color: cadetblue;
+    color: var(--azul_escuro-gamefesto);
     background-color: #dddddd;
 
     border: none;
@@ -515,6 +515,14 @@ footer .container-grid .direitos p {
 
 .redes-sociais a:hover {
     color: var(--azul_claro-gamefesto);
+}
+
+.menu-fechado {
+    display: none;
+}
+
+#icon-barra {
+    display: none;
 }
 
 @media screen and (max-width: 1220px) {
@@ -684,7 +692,6 @@ footer .container-grid .direitos p {
 @media screen and (max-width: 780px) {
     nav.menu {
         width: 100vw;
-        display:none;
     }
 
     .sobre-nos {
@@ -881,6 +888,10 @@ footer .container-grid .direitos p {
     width: 80%;
     }
 
+    form .info {
+        width: 100%;
+    }
+
     .social {
     display: flex;
     flex-direction: column;
@@ -888,7 +899,7 @@ footer .container-grid .direitos p {
     }
 
     .social .campo p {
-        font-size: 15px
+        font-size: 12px
     }
 
     form img.hefesto-fazendo {
@@ -897,5 +908,15 @@ footer .container-grid .direitos p {
 
     footer .direitos img {
         width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #sobre p {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 10px;
     }
 }
